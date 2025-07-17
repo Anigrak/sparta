@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <meta name="description" content="">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" crossorigin="anonymous"></script>
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+  <script src="assets/js/support.js"></script>
+</head>
+<body>
+<main>
+  <header>
+    <div class="logo">
+      <a href="/"></a>
+    </div>
+    <div class="menu d-desktop">
+      <ul class="navigation-text">
+        <li><a href="" target="_blank">ABOUT</a></li>
+        <li><a href="" target="_blank">FEATURES</a></li>
+        <li><a href="" target="_blank">NEWS</a></li>
+        <li><a href="" target="_blank" class="btn btn-text2 redbtn">BUY NOW</a></li>
+      </ul>
+    </div>
+    <div class="right">
+      <div class="personal d-desktop">
+        <ul class="navigation-text">
+          <li class="btn btn-text1"><a href="/login" class="btn">Sign in</a></li>
+          <li><a href="/register" class="btn">Sign up</a>
+          </li></ul>
+      </div>
+      <div class="social d-desktop">
+        <ul>
+          <li><a href=""><img src="/assets/img/support_header_logo.svg"></a></li>
+          <li><a href=""><img src="/assets/img/facebook-logo.svg"></a></li>
+          <li><a href=""><img src="/assets/img/Group.svg"></a></li>
+        </ul>
+      </div>
+      <div class="lang d-desktop">
+        <ul>
+          <li><a href="" class="check">ENG</a></li>
+          <li><a href="">ZH</a></li>
+        </ul>
+      </div>
+      <div class="burger d-mobile">
+        <img src="/assets/img/burger_icon.png" class="js-burger">
+      </div>
+    </div>
+  </header>
+<section class="login">
+  <div class="page_window">
+    <div class="headform deactiv">SIGN IN</div><div class="headform">SIGN UP</div>
+    <form class="content up">
+      <div class="mb-3 form-row">
+        <input type="text" id="registration_form_name" name="registration_form[name]" required="required" placeholder="Username" class="field-text" autocomplete="off">
+        <div class="info-text2 mt-1 error-detail js-error"></div>
+      </div>
+      <div class="mb-3 form-row">
+        <input type="email" id="registration_form_email" name="registration_form[email]" required="required" placeholder="Email" class="field-text" autocomplete="off">
+        <div class="info-text2 mt-1 error-detail js-error"></div>
+      </div>
+
+      <div class="mb-3 form-row">
+        <input type="password" id="registration_form_password_first" name="registration_form[password][first]" required="required" placeholder="Password" class="field-text" autocomplete="off">
+        <span class="password-toggle js-password-toggle"></span>
+        <div class="info-text2 mt-1 error-detail js-error"></div>
+      </div>
+      <div class="mb-3 form-row">
+        <input type="password" id="registration_form_password_second" name="registration_form[password][second]" required="required" placeholder="Repeat password" class="field-text" autocomplete="off">
+        <span class="password-toggle js-password-toggle"></span>
+        <div class="info-text2 mt-1 error-detail js-error"></div>
+      </div>
+      <div class="mb-3 form-row checkbox">
+        <input type="checkbox" id="registration_form_agreeTerms" name="registration_form[agreeTerms]" required="required" class="checkbox-input" value="1">
+        <label class="info-text2 required" for="registration_form_agreeTerms">
+          I agree... <a href="/privacy" class="underline" target="_blank">Privacy Policy</a>
+        </label>
+        <div class="info-text2 mt-1 error-detail js-error"></div>
+      </div>
+      <button type="button" class="mb-3 btn btn-text1 js-register">SIGN UP</button>
+      <input type="hidden" id="registration_form__token" name="registration_form[_token]" value="">
+    </form>
+
+
+    <form class="content in">
+      <div class="mb-3 form-row">
+        <input type="email" id="login_form_email" name="login_form[email]" required="required" placeholder="Email" class="field-text" autocomplete="off">
+        <div class="info-text2 mt-1 error-detail js-error"></div>
+      </div>
+
+      <div class="mb-3 form-row">
+        <input type="password" id="login_form_password_first" name="login_form[password]" required="required" placeholder="Password" class="field-text" autocomplete="off">
+        <span class="password-toggle js-password-toggle"></span>
+        <div class="info-text2 mt-1 error-detail js-error"></div>
+      </div>
+      <div class="mb-3 form-row checkbox">
+        <input type="checkbox" id="login_form_keep" name="login_form[keep]"  class="checkbox-input" value="1">
+        <label class="info-text2 required" for="login_form_keep">
+          Keep me logged in
+        </label>
+        <div class="info-text2 mt-1 error-detail js-error"></div>
+      </div>
+      <button type="button" class="mb-3 btn btn-text1 js-register">SIGN IN</button>
+      <input type="hidden" id="login_form__token" name="registration_form[_token]" value=""></form>
+  </div>
+
+</section>
+  <footer>
+    <div class="footer-top">
+      <div class="logo-section">
+        <div class="footer-logo"></div>
+        <div></div>
+      </div>
+      <div class="main-section">
+        <h4>Available on</h4>
+        <div class="logo_partner">
+          <a href="" class="steam"></a>
+          <a href="" class="epic"></a>
+          <a href="" class="gog"></a>
+        </div>
+      </div>
+      <div class="menu-section">
+        <div class="foter-list">
+          <h4>website</h4>
+          <ul>
+            <li><a href="" target="_blank">ABOUT</a></li>
+            <li><a href="" target="_blank">FEATURES</a></li>
+            <li><a href="" target="_blank">NEWS</a></li>
+          </ul>
+        </div>
+        <div class="foter-list">
+          <h4>Socials</h4>
+          <ul>
+            <li><a href="" target="_blank">CONTACT US</a></li>
+            <li><a href="" target="_blank">FACEBOOK</a></li>
+            <li><a href="" target="_blank">REDDIT</a></li>
+          </ul>
+        </div>
+        <div class="foter-list">
+          <h4>Language</h4>
+          <ul>
+            <li><a href="" class="check">ENGLISH</a></li>
+            <li><a href="">CHINESE</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>@WARHOUNDS 2025. All right reserved</div>
+      <div>
+        <a hraf="">Privacy Policy</a>
+        <a hraf="">Terms & Conditions</a>
+      </div>
+    </div>
+  </footer>
+</main>
+</body>
+</html>
