@@ -46,7 +46,7 @@
 
 h1 {font-family: DrukWideCyr; font-size: 90px; font-weight: 100;  text-transform: uppercase; text-align: center;}
 h2 {font-family: DrukWideCyr; font-size: 40px; font-weight: 100;  text-transform: uppercase;}
-h3 {font-family: DrukWideCyr; font-size: 20px; font-weight: 100;  text-transform: uppercase;}
+h3 {font-family: DrukWideCyr; font-size: 20px; font-weight: 100;  text-transform: uppercase;letter-spacing: 2px;}
 h4 {font-family: DrukWideCyr; font-size: 14px; font-weight: 100;  text-transform: uppercase;}
 a { margin: 0; padding: 0; border: none; text-decoration: none; color: var(--white);}
 a.underline {text-decoration: underline;}
@@ -302,6 +302,7 @@ section.main{padding: 15px 180px;}
   align-items: stretch;
   background: var(--red) url('../img/cover-bottom3.png') top center no-repeat;
   background-size: contain;
+  margin-bottom: 20px;
 }
 .bottom .top-text{font-family: DrukWideCyr;    font-size: 90px;top: 45px;
   position: relative;
@@ -372,6 +373,7 @@ section .page_window.support_window {
   clip-path: polygon(
           calc(0% + 24px) 0%,  calc(100% - 24px) 0, 100% 100%, 0% 100%
   );
+  padding-bottom:6px;
 }
 .headform.deactiv {
   background: var(--gray-2);
@@ -545,10 +547,24 @@ section .page_window button.btn {
 }
 .not-success {padding: 25px  !important;}
 .not-success h3{color:var(--error-color)}
-.not-success button.btn{background-color: var(--gray-2) !important;}
+.success-block button.btn.not-success{background-color: var(--gray-2) !important;}
 
 
 .login .in {display:none;}
+.login .success .back-box__icon{    position: absolute;
+  z-index: 2;
+  background: url(../img/select_arrow.png) no-repeat 50% 50%;
+  width: 24px;
+  height: 24px;
+  left: 24px;
+  background-size: cover;
+  transform: rotate(90deg);}
+.login .success p{margin:15px  0;}
+.login .page_window.success-block {
+
+  width: 376px;
+}
+
 section .page_window input::placeholder {font-family: Inter-Regular; font-size: 16px; font-weight: 400; color: var(--white);opacity: 0.5}
 section .page_window .form-error input::placeholder, section .page_window .form-error textarea::placeholder {color: var(--red);}
 section .page_window .password-toggle:after {
@@ -574,18 +590,18 @@ section .page_window .password-toggle:after {
 
 
 
-footer {padding: 15px 180px; background-color: var(--black);z-index: 3; }
+footer {padding: 40px 180px; background-color: var(--black);z-index: 3; }
 footer a {text-decoration: none;}
-footer .footer-top {display: flex; justify-content: space-between; align-items: center;}
+footer .footer-top {display: flex; justify-content: space-between; align-items: center;align-items: flex-start;}
 footer div {display: inline-block;}
 footer .footer-logo {background-image: url('../img/main_logo.svg');background-size: cover;
   width: 218px;
   height: 95px;}
 footer .main-section {justify-content: center;width: 40%;display: flex;align-items: center;    flex-direction: column;}
 footer .menu-section {display: flex;}
-footer .menu-section .foter-list {padding: 20px;text-align: left;}
+footer .menu-section .foter-list {padding: 0 20px;text-align: left;}
 footer ul {padding:0}
-footer ul li {list-style: none; vertical-align: middle;}
+footer ul li {list-style: none; vertical-align: middle;margin: 15px 0;}
 footer .footer-bottom{width: 100%;
   border-top: 1px solid var(--gray-2);
   display: flex;
@@ -609,6 +625,46 @@ footer .footer-bottom{width: 100%;
   h2 {
     text-align: right;
   }
+}
+
+.main-menu {
+  z-index: 3;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--black);
+  padding: 35px 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  transform: translateX(150%);
+  transition: transform .3s ease;
+  overflow-y: scroll;
+}
+body.modal .main-menu
+{
+  transform: translateX(0%);
+}
+.main-menu .close {
+  text-align: right;
+  padding-bottom: 40px;
+}
+.main-menu .menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.main-menu .menu ul li
+{
+  list-style: none;
+  width: 100%;
+  min-height: 46px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 @media screen and (max-width: 980px) {
   main {margin: 10px }

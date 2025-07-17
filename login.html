@@ -20,7 +20,8 @@
 
   <link rel="manifest" href="site.webmanifest">
   <meta name="theme-color" content="#fafafa">
-  <script src="assets/js/support.js"></script>
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/auth.js"></script>
 </head>
 <body>
 <main>
@@ -114,10 +115,47 @@
         </label>
         <div class="info-text2 mt-1 error-detail js-error"></div>
       </div>
-      <button type="button" class="mb-3 btn btn-text1 js-register">SIGN IN</button>
-      <input type="hidden" id="login_form__token" name="registration_form[_token]" value=""></form>
+      <button type="button" class="mb-3 btn btn-text1 js-auth">SIGN IN</button>
+      <input type="hidden" id="login_form__token" name="login_form[_token]" value="">
+    </form>
   </div>
-
+  <div class="page_window success-block" style="display: none">
+    <h3>Change password</h3>
+    <form class="content in">
+      <div class="mb-3 form-row">
+        <input type="password" id="change_form_password_щдв" name="change_form[password][old]" required="required" placeholder="Current assword" class="field-text" autocomplete="off">
+        <span class="password-toggle js-password-toggle"></span>
+        <div class="info-text2 mt-1 error-detail js-error"></div>
+      </div><div class="mb-3 form-row">
+        <input type="password" id="change_form_password_first" name="change_form[password][first]" required="required" placeholder="New password" class="field-text" autocomplete="off">
+        <span class="password-toggle js-password-toggle"></span>
+        <div class="info-text2 mt-1 error-detail js-error"></div>
+      </div>
+      <div class="mb-3 form-row">
+        <input type="password" id="change_form_password_second" name="change_form[password][second]" required="required" placeholder="Repeat password" class="field-text" autocomplete="off">
+        <span class="password-toggle js-password-toggle"></span>
+        <div class="info-text2 mt-1 error-detail js-error"></div>
+      </div>
+      <button type="button" class="mb-3 btn btn-text1 js-change">CHANGE</button>
+      <button type="button" class="mb-3 btn btn-text1 js-change not-success">BACK</button>
+      <input type="hidden" id="change_form__token" name="change_form[_token]" value="">
+    </form>
+  </div>
+  <div class="page_window  success success-block" style="display: none">
+    <a href="" class="back-box__icon"></a><h3>Check your email</h3>
+    <p>An email with account activation link has been sent to your email address. Please, check your mailbox. If not received, check the spam folder</p>
+    <p class="counter"><span style="opacity:0.5">Send again in</span> <span class="time">1:30</span></p>
+    <a href="/">
+      <button type="button" class="mt-4 btn redbtn btn-text1 not-success">RESEND</button>
+    </a>
+  </div>
+  <div class="page_window success-block error" style="display: none">
+    <h3>link expired</h3>
+    <p>The link has expired. Request new one by signing in</p>
+    <a href="/">
+      <button type="button" class="mt-4 btn btn-text1">MAIN PAGE</button>
+    </a>
+  </div>
 </section>
   <footer>
     <div class="footer-top">
@@ -168,5 +206,43 @@
     </div>
   </footer>
 </main>
+<div class="main-menu js-main-menu js-modal">
+  <div>
+    <div class="close">
+      <img src="/assets/img/close_icon.png" class="js-modal-close">
+    </div>
+    <div class="menu">
+      <ul class="navigation-text">
+        <li><a href="" target="_blank">ABOUT</a></li>
+        <li><a href="" target="_blank">FEATURES</a></li>
+        <li><a href="" target="_blank">NEWS</a></li>
+      </li><li class="btn js-btn"><a href="/profile/games" class="btn btn-text2">Купить</a>
+      </li></ul>
+    </div>
+    <div class="menu_separator"></div>
+    <div class="menu">
+      <ul class="navigation-text">
+        <li><a href="/login">Вход</a>
+        </li><li class="btn js-btn"><a href="/register" class="btn btn-text2">Регистрация</a>
+      </li></ul>
+      <div class="menu_separator"></div>
+      <div class="menu">
+        <ul class="navigation-text">
+          <li><a href="/logout">Выйти</a>
+          </li></ul>
+      </div>
+    </div>
+  </div>
+  <div class="social">
+    <ul>
+      <li><a href=""><img src="/assets/img/support_header_logo.svg"></a></li>
+      <li><a href=""><img src="/assets/img/facebook-logo.svg"></a></li>
+      <li><a href=""><img src="/assets/img/Group.svg"></a></li></ul>
+    <ul>
+      <li><a href="" class="check">ENGLISH</a></li>
+      <li><a href="">CHINESE</a></li>
+    </ul>
+  </div>
+</div>
 </body>
 </html>
