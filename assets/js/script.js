@@ -24,10 +24,10 @@ $(document).ready(function() {
     const slides = document.querySelector('.slides');
 
     // Определяем количество слайдов
-    const slideCount = document.querySelectorAll('.slide').length;
+    const slideCount = document.querySelectorAll('.mainslide').length;
 
 
-
+console.log(slideCount);
     let currentIndex = 0; // Переменная для хранения текущего слайда
 
     // Функция смены слайдов

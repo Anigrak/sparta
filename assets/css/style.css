@@ -225,11 +225,11 @@ section.main{padding: 15px 180px;}
 }
 
 /* Каждый отдельный слайд */
-.slide {
+.mainslide {
   width: 100%;
   flex-shrink: 0;
 }
-.slide {position: relative;}
+.mainslide {position: relative;}
 .redborder{
   position: absolute;
   bottom: 16px;
@@ -261,10 +261,13 @@ section.main{padding: 15px 180px;}
           90% 100%,
           0% 100%
   );
-  min-height: 278px;
+  min-height: 265px;
   justify-content: space-between;
 }
-.body-section2 .col.b-gif{background:  url('../img/feature-1.png') top left no-repeat;}
+
+.body-section2 .col.b-gif img{transform-style: preserve-3d;
+  max-width: 390px;    margin: auto;
+  }
 .body-section2 .col-2:hover{
   background: var(--red) url('../img/for-col-2-hover.png') top left no-repeat;
 }
