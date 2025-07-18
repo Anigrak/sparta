@@ -1,4 +1,25 @@
 $(document).ready(function() {
+
+  $("#sliderOwn").owlCarousel({
+    loop:true,
+    margin:30,
+    nav:false,
+    responsive:{
+      350:{
+        items:1
+      },
+      900:{
+        items:2
+      },
+      1200:{
+        items:3
+      },
+      1700:{
+        items:4
+      }
+    }
+  });
+
     // Находим контейнер со слайдами
     const slides = document.querySelector('.slides');
 
@@ -101,8 +122,11 @@ $(document).ready(function() {
                 $('.cookie_modal').remove();
             }
         });
-    })
+    });
+
+
 });
 function hideError() {
     $('.form-row').removeClass('form-error');
 }
+

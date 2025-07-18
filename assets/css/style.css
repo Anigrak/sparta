@@ -104,9 +104,9 @@ header .right {display: flex; align-items: center;}
 header .right .personal ul {gap: 15px; padding-right: 15px;}
 header .right .social ul {gap: 15px; padding:0px 15px; border-left: 1px solid var(--gray-2);}
 header .right .social ul a {display: flex;}
-header .right .lang ul {gap: 15px; padding-left: 15px; border-left: 1px solid var(--gray-2);}
-header .right .lang ul a {display: flex; color:var(--gray-2)}
-header .right .lang ul a.check {color:var(--white)}
+header .right .lang ul, .main-menu .lang ul {gap: 15px; padding-left: 15px; border-left: 1px solid var(--gray-2);}
+header .right .lang ul a, .main-menu .lang ul a {display: flex; color:var(--gray-2)}
+header .right .lang ul a.check, .main-menu .lang ul a.check {color:var(--white)}
 header .right .burger img {cursor: pointer;}
 header .right .personal .user_dropdown {display:none; position: fixed; padding-top: 32px; background: center 20px no-repeat; max-width: 250px; overflow: hidden; transform: translateX(-40%);}
 header .right .personal:hover .user_dropdown {display: block;}
@@ -120,8 +120,11 @@ header .right .user_dropdown .user_menu ul li {list-style: none;}
 .btn.redbtn {
   background-color: var(--red);
 }
+section {
+  margin-bottom: 140px;
+}
 .main-banner { background: var(--black) url('../img/keyart_sparta.png') no-repeat 50% top;    height: 730px;}
-.main-banner .main-banner-text{padding: 0px 180px; position: relative;top: 369px;}
+.main-banner .main-banner-text{max-width: 1240px;  position: relative;top: 369px;margin:auto}
 .main-banner .main-banner-text .text{    font-size: 82px;
   color: var(--white);
   text-transform: uppercase;
@@ -275,25 +278,24 @@ section.main{padding: 15px 180px;}
   margin: 0; }
 .body-section2 .col-2 ul li {list-style: none; vertical-align: middle;border-bottom: 1px solid var(--gray-2);    padding: 4px 0px; font-size: 16px;}
 .body-section2 .col-2 ul li:last-child{border-bottom:none}
-.body-section3 .col3 {display: flex; justify-content: space-around;; flex-direction: row; overflow: hidden;flex-wrap: wrap;}
-.body-section3 .col3 .col-4 {background-color: var(--gray-1);width: 298px;clip-path: polygon(
-        0% 0%, calc(100% - 26px) 0%, 100% calc(0% + 26px), 100% 100%,calc(0% + 26px) 100%, 0% calc(100% - 26px)
+.body-section3{}
+.col-4 {background-color: var(--gray-1);   min-width: 298px;clip-path: polygon(
+  0% 0%, calc(100% - 26px) 0%, 100% calc(0% + 26px), 100% 100%,calc(0% + 26px) 100%, 0% calc(100% - 26px)
 );}
-.body-section3 .col3 .col-4 .text{ padding: 16px 8px;
+.col-4 .text{ padding: 16px 8px;
   font-size: 16px;
   font-weight: 100;
   gap: 12px;
   display: flex;
   flex-direction: column;
   align-items: stretch;}
-.body-section3 .col3 .col-4 .text h3{margin: 0;}
-.body-section3 .col3 .col-4 .text .date{margin-top: -8px;}
-.body-section3 .col3 .col-4 .text .link{text-align: right; color: var(--red)}
+.col-4 .text h3{margin: 0;}
+.col-4 .text .date{margin-top: -8px;}
+.col-4 .text .link{text-align: right; color: var(--red)}
 
 .bottom {
   height: 600px;
   position: relative;
-  margin-top: 140px;
   overflow: hidden;
   display: flex;
   align-content: space-between;
@@ -373,7 +375,7 @@ section .page_window.support_window {
   clip-path: polygon(
           calc(0% + 24px) 0%,  calc(100% - 24px) 0, 100% 100%, 0% 100%
   );
-  padding-bottom:6px;
+  padding-bottom:8px;
 }
 .headform.deactiv {
   background: var(--gray-2);
@@ -588,8 +590,6 @@ section .page_window .password-toggle:after {
 
 
 
-
-
 footer {padding: 40px 180px; background-color: var(--black);z-index: 3; }
 footer a {text-decoration: none;}
 footer .footer-top {display: flex; justify-content: space-between; align-items: center;align-items: flex-start;}
@@ -607,6 +607,11 @@ footer .footer-bottom{width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 12px;}
+
+footer .f-bottom{
+  margin-bottom: 36px;
+}
+
 @media screen and (max-width: 1300px) {
   header,footer {padding: 15px 20px!important;}
   .d-padding {padding: 15px 0px!important;}
@@ -625,6 +630,15 @@ footer .footer-bottom{width: 100%;
   h2 {
     text-align: right;
   }
+  .col-4 {min-width: 200px;}
+  .body-section .slider {
+    width: 900px;
+    margin: auto;
+  }
+  .redborder {
+    left: 225px;
+    width: 600px;
+  }
 }
 
 .main-menu {
@@ -642,10 +656,15 @@ footer .footer-bottom{width: 100%;
   transform: translateX(150%);
   transition: transform .3s ease;
   overflow-y: scroll;
+  background: var(--black) url(../img/WH_Logo_white.svg) 35px 35px no-repeat;
+  background-size: 78px;
 }
 body.modal .main-menu
 {
   transform: translateX(0%);
+}
+.main-menu li{
+  list-style: none;
 }
 .main-menu .close {
   text-align: right;
@@ -665,8 +684,50 @@ body.modal .main-menu
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-size: 32px;
+  font-weight: 700;
+  padding: 16px 8px;
 }
+.main-menu .menu ul li.btn.btn-gray{
+  background-color: var(--gray-2) !important;
+}
+.main-menu .menu ul li.btn
+{
+  width: 100%;
+  background-color: var(--red);
+  color: var(--white);
+  padding: 10px 0;
+  cursor: pointer;
+  border: none;
+  clip-path: polygon(calc(0% + 8px) 0%, calc(100% - 8px) 0%, 100% calc(0% + 8px), 100% calc(100% - 8px), calc(100% - 8px) 100%, calc(0% + 8px) 100%, 0% calc(100% - 8px), 0% calc(0% + 8px));
+}
+.main-menu .menu_separator {
+  width: 100%;
+  padding-top: 40px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid var(--gray-1);
+}
+.main-menu .lang {
+  font-size: 24px;
+}
+.main-menu .lang ul {border: none !important}
+.main-menu .social{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.main-menu .social ul {
+  display: flex;
+  align-items: center;
+}
+.main-menu .social .logosocial a {
+  height: 36px;
+  width: 38px;
+  margin: 3px;
+}
+
 @media screen and (max-width: 980px) {
+  section{margin-bottom:60px;}
   main {margin: 10px }
   .main-banner .main-banner-text .text{ line-height: normal; font-size: 40px;}
   .main-banner .btn {width: 100%}
@@ -687,6 +748,19 @@ body.modal .main-menu
     min-width: 344px;
     width: 100%;
 }
+  .col-4 {min-width: 320px;}
+  .body-section2 .col {
+    margin-bottom: 30px;
+  }
+  .body-section .slider {
+    width: 343px;
+    margin: auto;
+  }
+  .redborder {
+    margin: auto;
+    width: 295px;
+    left: 24px;
+  }
   .main-banner .main-banner-text {
     top: 325px;
   }
@@ -734,15 +808,16 @@ body.modal .main-menu
   .bottom .bottom-line {
     background: url('../img/bottom-line-bottom-mobile.png') bottom center no-repeat;background-size: cover;
   }
+  footer .main-section {
+    align-items: flex-start;
+  }
 }
 @media screen and (max-width: 1199px) {
   section .page_window {
     margin: 40px auto 90px;
     width: 95%;
   }
-  footer .main-section {
-    align-items: flex-start;
-  }
+
 }
 
 
