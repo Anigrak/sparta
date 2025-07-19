@@ -26,8 +26,6 @@ $(document).ready(function() {
     // Определяем количество слайдов
     const slideCount = document.querySelectorAll('.mainslide').length;
 
-
-console.log(slideCount);
     let currentIndex = 0; // Переменная для хранения текущего слайда
 
     // Функция смены слайдов
@@ -129,4 +127,5 @@ console.log(slideCount);
 function hideError() {
     $('.form-row').removeClass('form-error');
 }
+
 
