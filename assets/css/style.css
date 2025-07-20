@@ -89,6 +89,7 @@ body {
 .mr-2{margin-right: 1rem !important;}
 .n-mr-r{margin-right: 0 !important;}
 main {max-width: 1600px;min-width: 365px; margin: 0 auto; padding: 35px 0  80px; display: flex; flex-direction: column; min-height: 100vh;overflow: hidden}
+.redtext{color:var(--red)}
 .gray2{background-color: var(--gray-2) !important;}
 .gray1{background-color: var(--gray-1) !important;}
 header {z-index: auto;padding: 15px 180px; background-color: var(--black); display: flex; justify-content: space-between; align-items: center;}
@@ -107,7 +108,42 @@ header .logo {
 .druk{font-family: DrukWideCyr;}
 
 .d-mobile {display: none !important;}
+.class404 {
+  background-color: var(--black);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-image: url('../img/big_back.png');
+  max-width: 1600px;
+  height: 730px;
 
+}
+
+.class404 .page_window {
+  margin: 230px auto 230px;
+  width: 312px;
+  z-index: 101;
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 40px;
+
+}
+.class404 .btn {
+  background-color: var(--gray-2);
+  color: var(--white);
+  cursor: pointer;
+  border: none;
+  clip-path: polygon(calc(0% + 8px) 0%, calc(100% - 8px) 0%, 100% calc(0% + 4px), 100% calc(100% - 4px), calc(100% - 8px) 100%, calc(0% + 8px) 100%, 0% calc(100% - 4px), 0% calc(0% + 4px));
+  font-size: 14px;
+  font-weight: 700;
+  padding: 18px 8px;/
+  text-align: center;
+}
+.class404 .btn.btnred {
+  background-color: var(--red);
+}
 
 @media screen and (max-width: 980px) {
   .d-mobile {display: block !important;}
