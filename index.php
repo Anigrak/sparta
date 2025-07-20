@@ -1,6 +1,6 @@
 
     <? include ('header.php')?>
-
+    <script src="assets/js/main.js"></script>
     <section>
         <div class="main-banner">
             <div class="main-banner-text d-padding">
