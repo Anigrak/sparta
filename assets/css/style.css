@@ -64,7 +64,7 @@ body {
 }
 
 .checkbox {}
-.checkbox-input {cursor: pointer; appearance: none; position: relative; width: 16px; height: 16px; min-width: 16px; background: var(--black-1); box-shadow: inset 0 0 5px rgb(0, 0, 0, 0.2); border-radius: 3px; border: 1px solid rgba(253, 253, 253, .5); -webkit-background-clip: padding-box; background-clip: padding-box;}
+.checkbox-input {cursor: pointer; appearance: none; position: relative; width: 16px; height: 16px; min-width: 16px; background: var(--gray-1); box-shadow: inset 0 0 5px rgb(0, 0, 0, 0.2); border-radius: 3px;   border: 1px solid #ffffff33;; -webkit-background-clip: padding-box; background-clip: padding-box;}
 .checkbox-input::after {content: ""; position: absolute; width: 0px; height: 0px; background-image: url("../img/checked.svg"); background-repeat: no-repeat; background-position: center;}
 .checkbox-input:checked {background-color: var(--red);border: none;}
 .checkbox-input:checked::after {width: 16px; height: 16px;}
@@ -84,8 +84,11 @@ body {
 .mb-3{margin-bottom:1rem!important}
 .mb-4{margin-bottom:1.5rem!important}
 .mb-5{margin-bottom:3rem!important}
+.mb-6{margin-bottom:9rem!important}
+.mr-1{margin-right: 5.5rem !important;}
 main {max-width: 1600px;min-width: 365px; margin: 0 auto; padding: 35px 0  80px; display: flex; flex-direction: column; min-height: 100vh;overflow: hidden}
-
+.gray2{background-color: var(--gray-2) !important;}
+.gray1{background-color: var(--gray-1) !important;}
 header {padding: 15px 180px; z-index: 1;background-color: var(--black); display: flex; justify-content: space-between; align-items: center;}
 header a {text-decoration: none;}
 header ul {display: flex; align-items: center;}
@@ -109,8 +112,12 @@ header .logo {
   .d-desktop {display: none !important;}
 }
 header .logo a {display: flex;}
-header .menu {justify-content: center;}
-header .menu ul {gap: 30px;}
+header .menu-all {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+header .menu ul {gap: 16px;}
 header .right {display: flex; align-items: center;}
 header .right .personal ul {gap: 15px; padding-right: 15px;}
 header .right .social ul {gap: 15px; padding:0px 15px; border-left: 1px solid var(--gray-2);}
@@ -127,13 +134,14 @@ header .right .user_dropdown .user_menu ul {display: flex; flex-direction:column
 header .right .user_dropdown .user_menu ul li {list-style: none;}
 .personal .navigation-text li a{clip-path: polygon(
         calc(0% + 8px) 0%, calc(100% - 8px) 0%, 100% calc(0% + 4px), 100% calc(100% - 4px)  ,calc(100% - 8px) 100% ,calc(0% + 8px) 100%, 0% calc(100% - 4px),0% calc(0% + 4px)
-);}
+);font-weight: bold;}
 .btn.redbtn {
   background-color: var(--red);
 }
 section {
   margin-bottom: 140px;
 }
+
 .main-banner { background: var(--black) url('../img/keyart_sparta.png') no-repeat 50% top;    height: 730px;}
 .main-banner .main-banner-text{max-width: 1240px;  position: relative;top: 369px;margin:auto}
 .main-banner .main-banner-text .text{    font-size: 82px;
@@ -149,7 +157,7 @@ section {
 .main-banner .main-banner-btn::after{ content: '';background-image: url('../img/main-btn-back.png');background-size: cover;width: 8px;transform: scaleX(-1);}
 .main-banner .btn a{ font-size:32px;}
 .roundtex {font-family: Inter-BoldItalic; padding: 10px 0;background-color: var(--gray-2);font-size: 36px;color: var(--white);letter-spacing: -2px;vertical-align: middle;}
-section.main{padding: 15px 180px;}
+section.main{margin:auto; max-width: 1240px;}
 .header-section{display: flex; justify-content: space-between;align-items: center;margin-bottom: 50px;}
 .header-section .h-section{      font-size: 24px;
   transform: skew(-24deg);
@@ -356,7 +364,7 @@ section.main{padding: 15px 180px;}
 .sale{color:#D5D5D5; text-decoration: line-through;    margin: 0 10px;}
 .bottom .space {height: 200px;}
 
-
+section.back-bage{margin-bottom:unset;}
 section.back-bage::after{
   content: '';
   background: url('../img/background.png')  top center no-repeat;
@@ -378,38 +386,46 @@ section .page_window.support_window {
   max-width: 500px;
 }
 .headform {
-  background: var(--gray-1);
-  position: absolute;
-  top: -41px;
-  width: 257px;
-  font-size: 24px;
+  font-family: 'DrukWideCyr';
+  font-size: 20px;
   text-align: center;
-  right: 0;
-  padding: 6px 16px;
   clip-path: polygon(
           calc(0% + 24px) 0%,  calc(100% - 24px) 0, 100% 100%, 0% 100%
   );
+  position: absolute;
+  padding: 6px 16px;
   padding-bottom:8px;
 }
-.headform.deactiv {
-  background: var(--gray-2);
-  position: absolute;
-  top: -41px;
-  width: 257px;
-  font-size: 24px;
-  text-align: center;
-  right: 180px;
-  padding: 6px 16px;
-  clip-path: polygon(calc(0% + 24px) 0%, calc(100% - 24px) 0, 100% 100%, 0% 100%);
+
+.headform.t-2 {
+  top: -38px;
+  width: 182px;
+  right: 0;
+
 }
+
+.headform.t-3 {
+  top: -38px;
+  width: 200px;
+  right: 130px;
+}
+.headform.t-4 {
+  top: -38px;
+  width: 257px;
+  right: 0px;
+}
+
 section .page_window {
-  margin: 100px auto 100px;
-  width: 520px;
+  margin: 130px auto 100px;
+  width: 376px;
   padding: 150px 30px 30px;
   background: var(--gray-1) url('../img/WH_Logo_white.svg') center 15px no-repeat;
   z-index: 2;
   position: relative;
   box-shadow: 8px -8px 0px 2px rgba(55, 55, 55, 1);
+}
+section .page_window.support_window{
+  width: 520px;
 }
 section .page_window.success-block {
   background: var(--gray-1);
@@ -422,7 +438,7 @@ section .page_window.success-block h3{margin-bottom:16px}
 
 section .page_window input[type="text"], section .page_window input[type="password"], section .page_window input[type="email"] {
   padding: 12px 16px;
-  border: 1px solid var(--gray-2);
+  border: 1px solid #ffffff33;
   width: 100%;
   background-color: var(--gray-1);
   outline: none;
@@ -475,13 +491,17 @@ section .page_window .error-detail {
 .select-box__input:checked + .select-box__input-text {
   display: block;
 }
+.placeholder-value .select-box__input-text{
+  color: #ffffff80;
+}
 .select-box__input-text {
   display: none;
   width: 100%;
   margin: 0;
   padding: 15px;
-  background-color: var(--black);
-  border: 1px solid var(--gray-2);
+  background-color: var(--gray-1);
+  border: 1px solid #ffffff33;
+
 }
 .form-error .select-box__input-text {
   border: 1px solid var(--red);
@@ -500,7 +520,7 @@ section .page_window .error-detail {
   transform: translateY(-50%) rotate(180deg);
 }
 .select-box__list {
-  margin: 1em 0;
+  margin: 0.25em 0;
   position: absolute;
   width: 100%;
   padding: 10px;
@@ -517,8 +537,8 @@ section .page_window .error-detail {
   -webkit-animation-timing-function: step-start;
   animation-timing-function: step-start;
   z-index: 10;
-  background-color: var(--black);
-  border: 1px solid var(--gray-2);
+  background-color: var(--gray-1);
+  border: 1px solid #ffffff33;
 }
 .select-box__current:focus .select-box__list {
   display: flex;
@@ -538,9 +558,9 @@ section .page_window .error-detail {
   opacity: 100%;
 }
 section .page_window textarea {
-  border: 1px solid var(--gray-2);
+  border: 1px solid #ffffff33;
   width: 100%;
-  background-color: var(--black);
+  background-color: var(--gray-1);
   height: 140px;
   resize: none;
   outline: none;
@@ -842,6 +862,10 @@ section.profile .page_window button.btn_back {
 @media screen and (max-width: 980px) {
   section{margin-bottom:60px;}
   main {margin: 10px; padding-top: 15px; }
+  section.main {
+     margin: unset;
+
+  }
   .main-banner .main-banner-text .text{ line-height: normal; font-size: 40px;}
   .main-banner .btn {width: 100%}
   h2 {font-size: 30px; text-align: center}
@@ -861,7 +885,10 @@ section.profile .page_window button.btn_back {
     min-width: 344px;
     width: 100%;
 }
-  .col-4 {min-width: 320px;}
+  .body-section2 {
+    flex-direction: column;
+  }
+  .col-4 {max-width: 320px;margin: auto;}
   .body-section2 .col {
     margin-bottom: 30px;
   }
@@ -927,7 +954,7 @@ section.profile .page_window button.btn_back {
 }
 @media screen and (max-width: 1199px) {
   section .page_window, section .page_window_profile {
-    margin: 40px auto 90px;
+    margin: 92px auto 90px;
     width: 95% !important;
   }
   section .page_window_profile h3{

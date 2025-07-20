@@ -1,7 +1,20 @@
 $(document).ready(function(){
 
     let inProgress = false;
+let hash=window.location.hash;
 
+if (hash == '#login'){
+    $('.headform2.login').addClass('gray1')
+    $('.headform.register').addClass('gray2');
+    $('.content.in').show();
+    $('.content.up').hide();
+}
+    if (hash == '#register'){
+        $('.headform2.login').addClass('gray2');
+        $('.headform.register').addClass('gray1');
+            $('.content.in').hide();
+            $('.content.up').show();
+    }
     $('.js-auth').on('click', function(){
         if(inProgress) return;
         inProgress = true;

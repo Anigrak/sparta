@@ -2,19 +2,19 @@ $(document).ready(function() {
 
   $("#sliderOwn").owlCarousel({
     loop:true,
-    margin:30,
+    margin:20,
     nav:false,
     responsive:{
-      350:{
+      0:{
         items:1
       },
-      900:{
+      450:{
         items:2
       },
-      1200:{
+      700:{
         items:3
       },
-      1700:{
+      1240:{
         items:4
       }
     }
