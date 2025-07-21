@@ -12,8 +12,8 @@ $(document).ready(function() {
         $('.js-profile-dropdown').toggleClass('hidden');
     });
 
-    let hash=window.location.hash;
-    if (hash == '#error_occurred'){
+    let hassh=window.location.hash;
+    if (hassh == '#error_occurred'){
         $('#error_occurred').show();
         document.body.style.overflow = 'hidden';
     }

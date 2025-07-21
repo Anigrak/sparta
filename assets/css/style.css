@@ -377,6 +377,13 @@ section.main{margin:auto; max-width: 1240px;}
 .body-section2 .col-2:hover{
   background: var(--red) url('../img/for-col-2-hover.png') top left no-repeat;
 }
+.body-section2 .col-2 > ul li a{
+  cursor: pointer;
+}
+.body-section2 .col-2:hover > ul li a{
+  color: var(--white) !important;
+  text-decoration: underline;
+}
 .body-section2 .col-2:first-child{ margin-bottom: 30px;}
 .body-section2 .col-2 h3{  margin-top: 0;margin-bottom: 67px;}
 .body-section2 .col-2 ul{ padding: 0;
@@ -1096,6 +1103,13 @@ opacity: 0.5;
   }
   .full .image{ width: 195px;}
 
+}
+@media screen and (max-width: 1240px) {
+  .body-section2 .col.b-gif{display: none}
+  h2 {
+    font-size: 34px;
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 1199px) {

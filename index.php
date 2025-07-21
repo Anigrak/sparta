@@ -84,14 +84,14 @@
                         <li>Tactical turn-based battles</li>
                         <li>Global map and strategic management</li>
                         <li>Wide variety of weapons, gears, and abilities</li>
-                        <li><span style="color: var(--red)">5 fractions</span>, each having unique soldiers and tactics</li>
+                        <li><a style="color: var(--red)">5 fractions</a>, each having unique soldiers and tactics</li>
                     </ul>
 
                 </div>
                 <div class="col-2"><h3>MARVELOUS MERCENARIES</h3>
                     <ul>
-                        <li><span style="color: var(--red)">5 character</span> classes</li>
-                        <li><span style="color: var(--red)">10 unique veterans</span> with unique traits, story, and abilities</li>
+                        <li><a style="color: var(--red)">5 character</a> classes</li>
+                        <li><a style="color: var(--red)">10 unique veterans</a> with unique traits, story, and abilities</li>
                         <li>Enormous variety of recruits to suit all tastes</li>
                     </ul>
                 </div>
