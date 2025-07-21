@@ -228,6 +228,30 @@ header .right .user_dropdown .user_menu ul li {list-style: none;}
 section {
   margin-bottom: 140px;
 }
+.running-text-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  height: 64px;
+}
+
+.running-text {
+  display: inline-block;
+  animation: runText 20s linear infinite;
+  position: absolute;
+  width: max-content;
+  left: 100%
+}
+
+@keyframes runText {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-140%);
+  }
+}
 
 .main-banner { background: var(--black) url('../img/keyart_sparta.png') no-repeat 50% top;    height: 730px;}
 .main-banner .main-banner-text{max-width: 1240px;  position: relative;top: 369px;margin:auto}
@@ -243,7 +267,7 @@ section {
 .main-banner .main-banner-btn::before{ content: '';background-image: url('../img/main-btn-back.png');background-size: cover;width: 8px;}
 .main-banner .main-banner-btn::after{ content: '';background-image: url('../img/main-btn-back.png');background-size: cover;width: 8px;transform: scaleX(-1);}
 .main-banner .btn a{ font-size:32px;}
-.roundtex {font-family: Inter-BoldItalic; padding: 10px 0;background-color: var(--gray-2);font-size: 36px;color: var(--white);letter-spacing: -2px;vertical-align: middle;}
+.roundtex {font-family: Inter-BoldItalic; padding: 10px 0;background-color: var(--gray-2);font-size: 36px;color: var(--white);vertical-align: middle;}
 section.main{margin:auto; max-width: 1240px;}
 .header-section{display: flex; justify-content: space-between;align-items: center;margin-bottom: 50px;}
 .header-section .h-section{      font-size: 24px;

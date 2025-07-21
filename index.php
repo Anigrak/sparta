@@ -19,8 +19,10 @@
                 </div>
             </div>
         </div>
+        <div class="roundtex running-text-container">
+            <div class="running-text">COMING SOON // TURN-BASED TACTICS // COMING SOON // TURN-BASED TACTICS // COMING SOON // TURN-BASED TACTICS // COMING SOON // TURN-BASED TACTICS // COMING SOON // TURN-BASED TACTICS // COMING SOON // TURN-BASED TACTICS</div>
+        </div>
 
-        <marquee class="roundtex" direction="left" scrollamount="10">COMING SOON // TURN-BASED TACTICS // COMING SOON // TURN-BASED TACTICS // COMING SOON // TURN-BASED TACTICS // COMING SOON // TURN-BASED TACTICS // COMING SOON // TURN-BASED TACTICS // COMING SOON // TURN-BASED TACTICS </marquee>
     </section>
     <section class="main mb-6">
         <div class="header-section">
@@ -119,10 +121,13 @@
         </div>
     </section>
     <section>
-        <marquee class="roundtex" direction="left" scrollamount="10">COMING SOON // TURN-BASED TACTICS // COMING SOON // TURN-BASED TACTICS // COMING SOON // TURN-BASED TACTICS // COMING SOON // TURN-BASED TACTICS // COMING SOON // TURN-BASED TACTICS // COMING SOON // TURN-BASED TACTICS </marquee>
+        <div class="roundtex running-text-container">
+            <div class="running-text">COMING SOON // TURN-BASED TACTICS // COMING SOON // TURN-BASED TACTICS // COMING SOON // TURN-BASED TACTICS // COMING SOON // TURN-BASED TACTICS // COMING SOON // TURN-BASED TACTICS // COMING SOON // TURN-BASED TACTICS</div>
+        </div>
         <div class="youtube"><img src="assets/img/youtube.png"></div>
-        <marquee class="roundtex" direction="left" scrollamount="10">COMING SOON // TURN-BASED TACTICS // COMING SOON // TURN-BASED TACTICS // COMING SOON // TURN-BASED TACTICS // COMING SOON // TURN-BASED TACTICS // COMING SOON // TURN-BASED TACTICS // COMING SOON // TURN-BASED TACTICS </marquee>
-
+        <div class="roundtex running-text-container">
+            <div class="running-text">COMING SOON // TURN-BASED TACTICS // COMING SOON // TURN-BASED TACTICS // COMING SOON // TURN-BASED TACTICS // COMING SOON // TURN-BASED TACTICS // COMING SOON // TURN-BASED TACTICS // COMING SOON // TURN-BASED TACTICS</div>
+        </div>
     </section>
     <section class="main  mb-6">
         <div class="header-section">
