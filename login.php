@@ -62,16 +62,16 @@
         <div class="page_window  success success-block" style="display: none">
             <a href="" class="back-box__icon"></a><h3>Check your email</h3>
             <p>An email with account activation link has been sent to your email address. Please, check your mailbox. If not received, check the spam folder</p>
-            <p class="counter"><span style="opacity:0.5">Send again in</span> <span class="time">1:30</span></p>
+            <p class="counter"><span style="opacity:0.5">Send again in</span> <span id="countdown">1:30</span></p>
             <a href="/">
-                <button type="button" class="mt-4 btn redbtn btn-text1 not-success">RESEND</button>
+                <button type="button" class="mt-4 btn btn-text1 js-send-verify disabled" disabled>RESEND</button>
             </a>
         </div>
-        <div class="page_window success-block error" style="display: none">
-            <h3>link expired</h3>
+        <div class="page_window success-block error" id="link_expired" style="display: none">
+            <h3 class="rederrortext">link expired</h3>
             <p>The link has expired. Request new one by signing in</p>
             <a href="/">
-                <button type="button" class="mt-4 btn btn-text1">MAIN PAGE</button>
+                <button type="button" class="mt-4 btn redbtn btn-text1">MAIN PAGE</button>
             </a>
         </div>
     </section>

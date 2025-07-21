@@ -1,7 +1,6 @@
 $(document).ready(function() {
 
 
-
     let burgerBtn = $('.js-burger');
     let mainMenu = $('.js-main-menu');
     burgerBtn.on('click',function(){
@@ -10,10 +9,19 @@ $(document).ready(function() {
 
     let profileBtn = $('.js-profile');
     profileBtn.on('click',function(){
-        $('.js-profile-dropdown').toogleClass('hidden');
+        $('.js-profile-dropdown').toggleClass('hidden');
     });
 
+    let hash=window.location.hash;
+    if (hash == '#error_occurred'){
+        $('#error_occurred').show();
+        document.body.style.overflow = 'hidden';
+    }
 
+    $('.js-cross-close').on('click', function(){
+        $(this).hide();
+        document.body.style.overflow = '';
+    });
 
     let modalCloseBtn = $('.js-modal-close');
     modalCloseBtn.on('click',function(){
@@ -91,5 +99,39 @@ function copy(that){
         $('#'+that).select();
     document.execCommand('copy',false);
 
+}
+function start() {
+
+    // запоминаем время нажатия
+    var start_time = new Date();
+
+    var count = 90;
+    // получаем время окончания таймера
+    var stop_time = start_time.setSeconds(start_time.getSeconds() + count);
+
+    // запускаем ежесекундный отсчёт
+    var countdown = setInterval(function() {
+        // текущее время
+        var now = new Date().getTime();
+        // сколько времени осталось до конца таймера
+        var remain = stop_time - now;
+        // переводим миллисекунды в минуты и секунды
+        var min = Math.floor( (remain % (1000 * 60 * 60)) / (1000 * 60) );
+        var sec = Math.floor( (remain % (1000 * 60)) / 1000 );
+        // если значение текущей секунды меньше 10, добавляем вначале ведущий ноль
+        sec = sec < 10 ? "0" + sec : sec;
+        // отправляем значение таймера на страницу в нужный раздел
+        document.getElementById('countdown').innerHTML = min + ":" + sec;
+        // если время вышло
+        if (remain < 0) {
+            clearInterval(countdown);
+            $(document).find('.counter').hide();
+            $(document).find('.send-verify').disabled = false;
+            $(document).find('.send-verify').removeClass('disabled');
+
+        }
+    }, 1000);
+    // помечаем, что таймер уже запущен
+    started = true;
 }
 

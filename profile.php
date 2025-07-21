@@ -7,7 +7,7 @@
             <h3>ivan_techno2001</h3>
             <p>ivantechno@gmail.com</p>
             <ul class="button-text">
-                <li class="btn btn-gray "><a href="">My Games</a></li>
+                <li class="btn btn-gray "><a href="mygames.php">My Games</a></li>
                 <li class="btn btn-gray "><a href="" >support</a></li>
                 <li class="menu_separator"></li>
                 <li class="btn btn-gray js-mail">change email</li>
@@ -37,7 +37,7 @@
                 <span class="password-toggle js-password-toggle"></span>
                 <div class="info-text2 mt-1 error-detail js-error"></div>
             </div>
-            <button type="button" class="mb-2 btn btn-text1 js-change">CHANGE</button>
+            <button type="button" class="mb-2 btn redbtn btn-text1 js-change-password">CHANGE</button>
             <button type="button" class="mb-2 btn btn-text1 js-back btn_back">BACK</button>
             <input type="hidden" id="change_form__token" name="change_form[_token]" value="">
         </form>
@@ -49,16 +49,24 @@
                 <input type="text" id="change_email_form" name="change_email_form[email]" required="required" placeholder="New Email" class="field-text" autocomplete="off">
                 <div class="info-text2 mt-1 error-detail js-error"></div>
             </div>
-            <button type="button" class="mb-2 btn btn-text1 js-change">CHANGE</button>
+            <button type="button" class="mb-2 btn redbtn btn-text1 js-change-email">CHANGE</button>
             <input type="hidden" id="change_email_form__token" name="change_email_form[_token]" value="">
         </form>
     </div>
-    <div class="page_window  success-block" style="display: none">
-        <a href="" class="back-box__icon"></a><h3 class="redtext">Check your email</h3>
+    <div class="page_window  success success-block" style="display: none">
+        <a href="" class="back-box__icon"></a><h3>Check your email</h3>
         <p>An email with account activation link has been sent to your email address. Please, check your mailbox. If not received, check the spam folder</p>
-        <p class="counter"><span style="opacity:0.5">Send again in</span> <span class="time">1:30</span></p>
+        <p class="counter"><span style="opacity:0.5">Send again in</span> <span id="countdown">1:30</span></p>
         <a href="/">
-            <button type="button" class="mt-4 btn redbtn btn-text1">RESEND</button>
+            <button type="button" class="mt-4 btn btn-text1 js-send-verify disabled" disabled>RESEND</button>
+        </a>
+    </div>
+    <div class="page_window success-block error" id="error_occurred" style="display: none">
+        <h3 class="rederrortext">error occurred</h3>
+        <p>An error occurred while changing the e-mail address</p>
+        <p style="opacity:0.5">If the issue is still occurring, please contact us via the support form</p>
+        <a href="/">
+            <button type="button" class="mt-4 btn btn-text1">RETRY</button>
         </a>
     </div>
 </section>

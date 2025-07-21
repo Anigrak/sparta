@@ -132,12 +132,16 @@
             <div class="price mr-2 d-desktop">$30</div><a href="" class="btn btnred">BUY NOW</a>
         </div>
     </div>
-
+    <div class="page_window success-block error"  style="display: none">
+        <h3 >The key is being issued</h3>
+        <p>The key you have ordered will be issued within next 24 hours. We will notify you on updates by email. Sorry for the inconvenience</p>
+    </div>
 </section>
-<div class="over js-modal-popup" style="display: none">
+<div class="over js-modal-popup js-cross-close" id="error_occurred" style="display: none">
     <div class="page_window all success-block" >
-        <h3>Email sent</h3>
-        <p>Check your mailbox. If not received, check the spam folder</p>
+        <a href="" class="back-box__icon  js-modal-close"></a>
+        <h3 >The key is being issued</h3>
+        <p>The key you have ordered will be issued within next 24 hours. We will notify you on updates by email. Sorry for the inconvenience</p>
 
     </div>
 </div>

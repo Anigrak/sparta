@@ -1,19 +1,24 @@
 $(document).ready(function(){
 
     let inProgress = false;
+    let started = false;
 let hash=window.location.hash;
 
-if (hash == '#login'){
-    $('.headform2.login').addClass('gray1')
-    $('.headform.register').addClass('gray2');
-    $('.content.in').show();
-    $('.content.up').hide();
-}
+    if (hash == '#login'){
+        $('.headform.login').addClass('gray1')
+        $('.headform.register').addClass('gray2');
+        $('.content.in').show();
+        $('.content.up').hide();
+    }
     if (hash == '#register'){
-        $('.headform2.login').addClass('gray2');
+        $('.headform.login').addClass('gray2');
         $('.headform.register').addClass('gray1');
             $('.content.in').hide();
             $('.content.up').show();
+    }
+    if (hash == '#link_expired'){
+        $('.page_window').hide();
+        $('#link_expired').show();
     }
     $('.js-auth').on('click', function(){
         if(inProgress) return;
@@ -21,6 +26,7 @@ if (hash == '#login'){
         hideError();
         let formContainer = $(this).parents('form');
 
+/*
         $.ajax({
             type: "POST",
             data: formContainer.serialize(),
@@ -36,6 +42,8 @@ if (hash == '#login'){
                 inProgress = false;
             }
         });
+
+ */
     });
 
     $('.js-register').on('click', function(){
@@ -44,6 +52,16 @@ if (hash == '#login'){
         hideError();
         let form = $(this).parents('form');
 
+        // при успешной отпрвке показываем попап
+        form.parents('.page_window').hide();
+        $(document).find('.success-block.success').show();
+        if (!started) {
+            start();
+        }
+        started = true;
+
+
+/*
         $.ajax({
             type: "POST",
             data: $(this).parents('form').serialize(),
@@ -67,13 +85,15 @@ if (hash == '#login'){
                 inProgress = false;
             }
         });
+
+ */
     });
 
     $('.js-send-verify').on('click', function(){
         if(inProgress) return;
         inProgress = true;
         hideError();
-
+/*
         $.ajax({
             type: "POST",
             data: {},
@@ -87,6 +107,8 @@ if (hash == '#login'){
                 inProgress = false;
             }
         });
+
+ */
     });
 
     $('.js-forgot').on('click', function(){
@@ -94,7 +116,7 @@ if (hash == '#login'){
         inProgress = true;
         hideError();
         let formContainer = $(this).parents('form');
-
+/*
         $.ajax({
             type: "POST",
             data: formContainer.serialize(),
@@ -114,6 +136,7 @@ if (hash == '#login'){
                 inProgress = false;
             }
         });
+ */
     });
 
     $('.js-change').on('click', function(){
@@ -122,7 +145,7 @@ if (hash == '#login'){
         hideError();
         let formContainer = $(this).parents('form');
         let successContainer = $('.success-block');
-
+/*
         $.ajax({
             type: "POST",
             data: $(this).parents('form').serialize(),
@@ -143,6 +166,8 @@ if (hash == '#login'){
                 inProgress = false;
             }
         });
+
+ */
     });
 
 });

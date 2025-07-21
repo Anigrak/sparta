@@ -90,6 +90,7 @@ body {
 .n-mr-r{margin-right: 0 !important;}
 main {max-width: 1600px;min-width: 365px; margin: 0 auto; padding: 35px 0  80px; display: flex; flex-direction: column; min-height: 100vh;overflow: hidden}
 .redtext{color:var(--red)}
+.rederrortext{color:var(--error-color)}
 .gray2{background-color: var(--gray-2) !important;}
 .gray1{background-color: var(--gray-1) !important;}
 header {z-index: auto;padding: 15px 180px; background-color: var(--black); display: flex; justify-content: space-between; align-items: center;}
@@ -98,7 +99,7 @@ header ul {display: flex; align-items: center;}
 header ul li {list-style: none; vertical-align: middle;}
 header ul li a:not(.btn){color: var(--white);}
 header ul li a.btn {background-color: var(--gray-2); padding: 8px 16px; color: var(--white);}
-
+.disabled{opacity: 0.75}
 header .logo {
   background-image: url('../img/main_logo.svg');
   width: 78px;
@@ -149,12 +150,16 @@ header .logo {
   .d-mobile {display: block !important;}
   .d-desktop {display: none !important;}
 }
+@media screen and (max-width: 1199px) {
+  body.modal main {overflow: hidden; height: 100vh;}
+}
 header .logo a {display: flex;}
 header .menu-all {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
+
 header .menu ul {gap: 16px;}
 header .right {display: flex; align-items: center;}
 header .right .personal ul {gap: 15px; padding-right: 15px;}
@@ -168,7 +173,7 @@ header .right .personal {position:relative}
 header .right .personal .prof-header {padding-right: 15px;}
 header .right .personal .prof-header-dropdown .prof-header-dropdown-inner {
   position: absolute;
-  top: 37px;
+  top: 34px;
   left: -75px;
   background: var(--gray-1) url("../img/corner-prof.svg") top right no-repeat;
   height: 225px;
@@ -218,7 +223,7 @@ header .right .user_dropdown .user_menu ul li {list-style: none;}
         calc(0% + 8px) 0%, calc(100% - 8px) 0%, 100% calc(0% + 4px), 100% calc(100% - 4px)  ,calc(100% - 8px) 100% ,calc(0% + 8px) 100%, 0% calc(100% - 4px),0% calc(0% + 4px)
 );font-weight: bold;}
 .btn.redbtn {
-  background-color: var(--red);
+  background-color: var(--red) !important;
 }
 section {
   margin-bottom: 140px;
@@ -478,7 +483,7 @@ section.back-bage::after{
 .over .page_window {
   margin: 130px auto 100px;
   width: 376px;
-  padding: 30px;
+  padding: 42px;
   background: var(--gray-1) url('../img/rectangle16.svg') bottom left no-repeat;
   z-index: 101;
   position: relative;
@@ -510,13 +515,17 @@ section .page_window.support_window {
   top: -38px;
   width: 182px;
   right: 0;
-
+  z-index: 4;
 }
 
 .headform.t-3 {
   top: -38px;
-  width: 200px;
-  right: 130px;
+  width: 180px;
+  right: 145px;
+  z-index: 3;
+  clip-path: polygon(
+          calc(0% + 24px) 0%, 100% 0, 100% 100%, 0% 100%
+  );
 }
 .headform.t-4 {
   top: -38px;
@@ -673,7 +682,7 @@ section .page_window textarea {
 }
 section .page_window button.btn {
   width: 100%;
-  background-color: var(--red);
+  background-color: var(--gray-2);
   color: var(--white);
   padding: 10px 0;
   cursor: pointer;
@@ -701,7 +710,13 @@ section .page_window button.btn {
 
   width: 376px;
 }
-
+.over .page_window .back-box__icon{    position: absolute;
+  z-index: 2;
+  background: url(../img/cross.svg) no-repeat 50% 50%;
+  width: 24px;
+  height: 24px;
+  right: 24px;
+  background-size: cover;}
 section .page_window input::placeholder {font-family: Inter-Regular; font-size: 16px; font-weight: 400; color: var(--white);opacity: 0.5}
 section .page_window .form-error input::placeholder, section .page_window .form-error textarea::placeholder {color: var(--red);}
 section .page_window .password-toggle:after {
@@ -1048,6 +1063,7 @@ opacity: 0.5;
   font-weight: 700;
   padding: 4px;
 }
+#error_occurred p{padding: 10px 15px;}
 @media screen and (max-width: 1300px) {
   header,footer {padding: 15px 20px!important;}
   .d-padding {padding: 15px 0px!important;}
