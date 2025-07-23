@@ -124,7 +124,15 @@
         <div class="roundtex running-text-container">
             <div class="running-text">COMING SOON // TURN-BASED TACTICS // COMING SOON // TURN-BASED TACTICS // COMING SOON // TURN-BASED TACTICS // COMING SOON // TURN-BASED TACTICS // COMING SOON // TURN-BASED TACTICS // COMING SOON // TURN-BASED TACTICS</div>
         </div>
-        <div class="youtube"><img src="assets/img/youtube.png"></div>
+        <div class="youtube">
+            <div class="video">
+                <div class="video-wrp">
+                    <iframe width="1600" height="700" src="https://youtu.be/KzPM4xsWSVQ?si=DZXNvLNeTFzY5J3u" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+                    </iframe>
+                </div>
+            </div>
+
+        </div>
         <div class="roundtex running-text-container">
             <div class="running-text">COMING SOON // TURN-BASED TACTICS // COMING SOON // TURN-BASED TACTICS // COMING SOON // TURN-BASED TACTICS // COMING SOON // TURN-BASED TACTICS // COMING SOON // TURN-BASED TACTICS // COMING SOON // TURN-BASED TACTICS</div>
         </div>
