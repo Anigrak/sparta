@@ -127,8 +127,7 @@
         <div class="youtube">
             <div class="video">
                 <div class="video-wrp">
-                    <iframe width="1600" height="700" src="https://youtu.be/KzPM4xsWSVQ?si=DZXNvLNeTFzY5J3u" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
-                    </iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/N3RKg1dC9Ig?si=2a9VTf-CfZLJY6Wn&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
 
