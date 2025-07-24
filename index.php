@@ -38,7 +38,7 @@
 
                     </div>
                 </div>
-                <div class="slide mainslide" style="background-image: url('assets/img/slider-1.png')">
+                <div class="slide mainslide" data-hash="one" style="background-image: url('assets/img/slider-1.png')">
                     <div class="redborder">
                         A president of the last country, which still resisting the onslaught of Dammat, appeals to Sparta, an elite mercenary unit which has proven itself to deal with local conflicts in the past. Spartans will help the local resistance stop the chaos in which East Africa is descending into and prevent Daamat from becoming the World's No. 1 terrorist.
 

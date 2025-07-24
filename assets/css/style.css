@@ -1241,6 +1241,10 @@ opacity: 0.5;
 height:500px;
     background-position-x: 25%;
   }
+  .body-section .control-slider {
+    max-width: 344px;
+    margin: 15px auto;
+  }
   .body-section2 {
     flex-direction: column;
   }
