@@ -498,7 +498,7 @@ section.main{margin:auto; max-width: 1240px;width: 100%;}
 .sale{color:#D5D5D5; text-decoration: line-through;    margin: 0 10px;}
 .bottom .space {height: 200px;}
 
-section.back-bage{margin-bottom:unset;}
+section.back-bage{margin-bottom:unset;  }
 section.back-bage::after{
   content: '';
   background: url('../img/background.png')  top center no-repeat;
@@ -1183,6 +1183,22 @@ opacity: 0.5;
     font-size: 34px;
     text-align: center;
   }
+  .mainslide {
+    max-width: 800px;
+    margin: auto;
+    min-width: 344px;
+    height:500px;
+    background-position-x: 25%;
+  }
+  .body-section .control-slider {
+    max-width: 800px;
+    margin: 15px auto;
+  }
+  section.main {
+    margin: auto;
+    max-width: 900px;
+    width: 100%;
+  }
 
 }
 
@@ -1210,6 +1226,9 @@ opacity: 0.5;
   section.main {
     margin: unset;
   width:100%
+  }
+  section.back-bage {
+    padding-right: 8px;
   }
   section.back-bage::after {
     background-size: auto !important;
