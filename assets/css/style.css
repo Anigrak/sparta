@@ -257,6 +257,22 @@ section {
     transform: translateX(-140%);
   }
 }
+.running-text2 {
+  display: inline-block;
+  animation: runText2 30s linear infinite;
+  position: absolute;
+  width: max-content;
+  left: 100%
+}
+
+@keyframes runText2 {
+  0% {
+    transform: translateX(-140%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 
 .main-banner { background: var(--black) url('../img/keyart_sparta.png') no-repeat 50% top;    height: 730px;}
 .main-banner .main-banner-text{max-width: 1240px;  position: relative;top: 369px;margin:auto}
