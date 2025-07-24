@@ -475,7 +475,7 @@ section.main{margin:auto; max-width: 1240px;width: 100%;}
   position: absolute;
   top: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }
 .bottom .bottom-line{ display: flex; justify-content: center;
   background: url('../img/bottom-line-bottom.png') bottom center no-repeat;
@@ -1152,7 +1152,6 @@ opacity: 0.5;
     margin: auto;
   }
   .redborder {
-    left: 225px;
     width: 600px;
   }
   .full {
@@ -1166,7 +1165,7 @@ opacity: 0.5;
      max-width: unset;
   }
   .bottom .solders {
-    background-size: contain;
+    background-size: cover;
   }
   .bottom  {
     height: 704px;
