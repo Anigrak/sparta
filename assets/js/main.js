@@ -2,24 +2,30 @@ $(document).ready(function() {
 
     $("#sliderOwn").owlCarousel({
         loop: true,
-        autoplay: true,
-        margin: 20,
+        items: 1,
+        autoplay: false,
+        margin: 0,
         nav: false,
-        responsive: {
-            0: {items: 1},
-            450: {items: 2},
-            700: {items: 3},
-            1240: {items: 4}
-        }
+        dots: false,
+        URLhashListener:true,
+        autoplayHoverPause:true,
+        startPosition: 'zero'
     });
+    $(document).on('click', '.type', function () {
 
+        $(document).find('.type2').removeClass('type2').addClass('type1');
+        $(this).removeClass('type1').removeClass('type3');
+        $(this).addClass('type2');
+
+    });
+/*
     // Находим контейнер со слайдами
     const slides = document.querySelector('.slides');
 
     // Определяем количество слайдов
     const slideCount = document.querySelectorAll('.mainslide').length;
 
-    let currentIndex = 0; // Переменная для хранения текущего слайда
+    let currentIndex = 2; // Переменная для хранения текущего слайда
 
     // Функция смены слайдов
     function goToSlide(index) {
@@ -42,4 +48,6 @@ $(document).ready(function() {
         $(this).addClass('type2');
 
     });
+
+ */
 });

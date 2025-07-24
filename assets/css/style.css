@@ -88,7 +88,7 @@ body {
 .mr-1{margin-right: 5.5rem !important;}
 .mr-2{margin-right: 1rem !important;}
 .n-mr-r{margin-right: 0 !important;}
-main {max-width: 1600px;min-width: 365px; margin: 0 auto; padding: 35px 0  80px; display: flex; flex-direction: column; min-height: 100vh;overflow: hidden}
+main {max-width: 1600px;min-width: 365px; margin: 0 auto; padding: 0 0  80px; display: flex; flex-direction: column; min-height: 100vh;overflow: hidden}
 .redtext{color:var(--red)}
 .rederrortext{color:var(--error-color)}
 .gray2{background-color: var(--gray-2) !important;}
@@ -153,13 +153,13 @@ header .logo {
 @media screen and (max-width: 1199px) {
   body.modal main {overflow: hidden; height: 100vh;}
 }
-header .logo a {display: flex;}
+header .logo a {display: flex;height: 34px;}
 header .menu-all {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-
+.mr-a {}
 header .menu ul {gap: 16px;}
 header .right {display: flex; align-items: center;}
 header .right .personal ul {gap: 15px; padding-right: 15px;}
@@ -238,7 +238,7 @@ section {
 
 .running-text {
   display: inline-block;
-  animation: runText 20s linear infinite;
+  animation: runText 30s linear infinite;
   position: absolute;
   width: max-content;
   left: 100%
@@ -268,7 +268,7 @@ section {
 .main-banner .main-banner-btn::after{ content: '';background-image: url('../img/main-btn-back.png');background-size: cover;width: 8px;transform: scaleX(-1);}
 .main-banner .btn a{ font-size:32px;}
 .roundtex {font-family: Inter-BoldItalic; padding: 10px 0;background-color: var(--gray-2);font-size: 36px;color: var(--white);vertical-align: middle;}
-section.main{margin:auto; max-width: 1240px;}
+section.main{margin:auto; max-width: 1240px;width: 100%;}
 .header-section{display: flex; justify-content: space-between;align-items: center;margin-bottom: 50px;}
 .header-section .h-section{      font-size: 24px;
   transform: skew(-24deg);
@@ -341,31 +341,26 @@ section.main{margin:auto; max-width: 1240px;}
   background-color: var(--gray-2);
 }
 .slider {
-  width: 1240px;
-  overflow: hidden;
-  position: relative;
+
 }
 
 
 .slides {
-  display: flex;
-  width: 300%;
-  transition: transform 0.5s ease-in-out;
-  position: relative;
+
 }
 
 /* Каждый отдельный слайд */
 .mainslide {
-  width: 100%;
-  flex-shrink: 0;
+  width: 1240px;
+  position: relative;
+  height: 500px;
 }
-.mainslide {position: relative;}
 .redborder{
   position: absolute;
   bottom: 16px;
   width: 750px;
   padding: 12px;
-  left: 470px;
+  right:30px;
   font-size: 16px;
   background: var(--black)  url('../img/corner.png') top right no-repeat;
   clip-path: polygon(0% 0%, calc(100% - 20px) 0%, 100% calc(0% + 20px), 100% 100%, calc(0% + 20px) 100%, 0% calc(100% - 20px));
@@ -486,7 +481,7 @@ section.back-bage{margin-bottom:unset;}
 section.back-bage::after{
   content: '';
   background: url('../img/background.png')  top center no-repeat;
-  background-size: contain;
+  background-size: cover;
   opacity: 0.2;
   bottom: 0;
   left: 0;
@@ -1145,18 +1140,34 @@ opacity: 0.5;
   .full .image{ width: 195px;}
 
 }
+@media screen and (min-width: 1600px) {
+  main {
+     max-width: unset;
+  }
+  .bottom .solders {
+    background-size: contain;
+  }
+  .main-banner {
+    background-size: cover;
+  }
+  .bottom .bottom-line .button {
+   max-width:1240px;
+  }
+}
 @media screen and (max-width: 1240px) {
   .body-section2 .col.b-gif{display: none}
   h2 {
     font-size: 34px;
     text-align: center;
   }
+
 }
 
 @media screen and (max-width: 1199px) {
   section .page_window, section .page_window_profile {
     margin: 92px auto 90px;
     width: 95% !important;
+    max-width:376px;
   }
   section .page_window_profile h3{
     overflow: hidden;
@@ -1168,17 +1179,20 @@ opacity: 0.5;
 }
 @media screen and (max-width: 980px) {
   section{margin-bottom:60px;}
-  main {margin: 10px; padding-top: 15px; }
+  main {margin: 0px; padding-top: 15px; }
   section.main {
     margin: unset;
-
+  width:100%
+  }
+  section.back-bage::after {
+    background-size: auto !important;
   }
   .main-banner .main-banner-text .text{ line-height: normal; font-size: 40px;}
   .main-banner .btn {width: 100%}
   h2 {font-size: 30px; text-align: center}
   .body-section2 {flex-wrap: wrap;}
   .d-tablet {font-size: 40px !important;}
-  .bottom .bottom-line .button {min-width: 300px !important;
+  .bottom .bottom-line .button {min-width: 300px !important;padding: 13px 0;
     font-size: 24px;}
   .sale{ margin: 0 5px;}
   footer .footer-top {
@@ -1191,6 +1205,13 @@ opacity: 0.5;
     margin: auto;
     min-width: 344px;
     width: 100%;
+  }
+  .mainslide {
+    max-width: 400px;
+    margin: auto;
+    min-width: 344px;
+height:500px;
+    background-position-x: 25%;
   }
   .body-section2 {
     flex-direction: column;

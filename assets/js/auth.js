@@ -10,7 +10,7 @@ let hash=window.location.hash;
         $('.content.in').show();
         $('.content.up').hide();
     }
-    if (hash == '#register'){
+    if (hash == '#register' || hash==''){
         $('.headform.login').addClass('gray2');
         $('.headform.register').addClass('gray1');
             $('.content.in').hide();
@@ -20,6 +20,19 @@ let hash=window.location.hash;
         $('.page_window').hide();
         $('#link_expired').show();
     }
+    $('.headform.login').on('click', function(){
+        $('.headform.login').addClass('gray1').removeClass('gray2');
+        $('.headform.register').addClass('gray2').removeClass('gray1');
+        $('.content.in').show();
+        $('.content.up').hide();
+    });
+    $('.headform.register').on('click', function(){
+        $('.headform.login').addClass('gray2').removeClass('gray1');
+        $('.headform.register').addClass('gray1').removeClass('gray2');
+        $('.content.in').hide();
+        $('.content.up').show();
+    });
+
     $('.js-auth').on('click', function(){
         if(inProgress) return;
         inProgress = true;

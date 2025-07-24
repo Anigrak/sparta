@@ -30,50 +30,78 @@
             <h2>COMPREHEND THE STORY</h2>
         </div>
         <div class="body-section">
-            <div class="slider">
-                <div class="slides">
-                    <div class="mainslide">
-                        <img src="assets/img/slider-1.png">
-                        <div class="redborder">
-                            A president of the last country, which still resisting the onslaught of Dammat, appeals to Sparta, an elite mercenary unit which has proven itself to deal with local conflicts in the past. Spartans will help the local resistance stop the chaos in which East Africa is descending into and prevent Daamat from becoming the World's No. 1 terrorist.
+            <div class="owl-carousel owl-theme" id="sliderOwn">
+                <!--Слайд 1-->
+                <div class="slide mainslide" data-hash="zero" style="background-image: url('assets/img/slider-1.png')">
+                    <div class="redborder">
+                        A president of the last country, which still resisting the onslaught of Dammat, appeals to Sparta, an elite mercenary unit which has proven itself to deal with local conflicts in the past. Spartans will help the local resistance stop the chaos in which East Africa is descending into and prevent Daamat from becoming the World's No. 1 terrorist.
 
-                        </div>
-                    </div>
-
-                    <div class="mainslide">
-                        <img src="assets/img/slider-1.png">
-                        <div class="redborder">
-                            A president of the last country, which still resisting the onslaught of Dammat, appeals to Sparta, an elite mercenary unit which has proven itself to deal with local conflicts in the past. Spartans will help the local resistance stop the chaos in which East Africa is descending into and prevent Daamat from becoming the World's No. 1 terrorist.
-
-                        </div>
-                    </div>
-                    <div class="mainslide">
-                        <img src="assets/img/slider-1.png">
-                        <div class="redborder">
-                            A president of the last country, which still resisting the onslaught of Dammat, appeals to Sparta, an elite mercenary unit which has proven itself to deal with local conflicts in the past. Spartans will help the local resistance stop the chaos in which East Africa is descending into and prevent Daamat from becoming the World's No. 1 terrorist.
-
-                        </div>
-                    </div>
-                    <div class="mainslide">
-                        <img src="assets/img/slider-1.png">
-                        <div class="redborder">
-                            A president of the last country, which still resisting the onslaught of Dammat, appeals to Sparta, an elite mercenary unit which has proven itself to deal with local conflicts in the past. Spartans will help the local resistance stop the chaos in which East Africa is descending into and prevent Daamat from becoming the World's No. 1 terrorist.
-
-                        </div>
                     </div>
                 </div>
-                <div class="control-slider">
-                    <div class="type type2" data-slide="1">/01/</div>
-                    <div class="line"></div>
-                    <div class="type type3" data-slide="2">/02/</div>
-                    <div class="line" style="opacity: 0.5"></div>
-                    <div class="type type3" data-slide="3">/03/</div>
-                    <div class="line" style="opacity: 0.5"></div>
-                    <div class="type type3" data-slide="4">/04/</div>
+                <div class="slide mainslide" style="background-image: url('assets/img/slider-1.png')">
+                    <div class="redborder">
+                        A president of the last country, which still resisting the onslaught of Dammat, appeals to Sparta, an elite mercenary unit which has proven itself to deal with local conflicts in the past. Spartans will help the local resistance stop the chaos in which East Africa is descending into and prevent Daamat from becoming the World's No. 1 terrorist.
+
+                    </div>
+                </div>
+                <div class="slide mainslide" data-hash="two" style="background-image: url('assets/img/slider-1.png')">
+                    <div class="redborder">
+                        A president of the last country, which still resisting the onslaught of Dammat, appeals to Sparta, an elite mercenary unit which has proven itself to deal with local conflicts in the past. Spartans will help the local resistance stop the chaos in which East Africa is descending into and prevent Daamat from becoming the World's No. 1 terrorist.
+
+                    </div>
+                </div>
+                <div class="slide mainslide" data-hash="three" style="background-image: url('assets/img/slider-1.png')">
+                    <div class="redborder">
+                        A president of the last country, which still resisting the onslaught of Dammat, appeals to Sparta, an elite mercenary unit which has proven itself to deal with local conflicts in the past. Spartans will help the local resistance stop the chaos in which East Africa is descending into and prevent Daamat from becoming the World's No. 1 terrorist.
+
+                    </div>
                 </div>
             </div>
+
+
+                <div class="control-slider">
+                    <a class="type type2" href="#zero"  >/01/</a>
+                    <div class="line"></div>
+                    <a class="type type3"  href="#one" >/02/</a>
+                    <div class="line" style="opacity: 0.5"></div>
+                    <a class="type type3"  href="#two"  >/03/</a>
+                    <div class="line" style="opacity: 0.5"></div>
+                    <a  class="type type3"  href="#three"  >/04/</a>
+                </div>
+
         </div>
     </section>
+    <div class="owl-carousel owl-theme" id="hh">
+        <!--Слайд 1-->
+        <div class="slide">
+            <img src="assets/img/slider-1.png">
+            <div class="redborder">
+                A president of the last country, which still resisting the onslaught of Dammat, appeals to Sparta, an elite mercenary unit which has proven itself to deal with local conflicts in the past. Spartans will help the local resistance stop the chaos in which East Africa is descending into and prevent Daamat from becoming the World's No. 1 terrorist.
+
+            </div>
+        </div>
+        <div class="slide">
+            <img src="assets/img/slider-1.png">
+            <div class="redborder">
+                A president of the last country, which still resisting the onslaught of Dammat, appeals to Sparta, an elite mercenary unit which has proven itself to deal with local conflicts in the past. Spartans will help the local resistance stop the chaos in which East Africa is descending into and prevent Daamat from becoming the World's No. 1 terrorist.
+
+            </div>
+        </div>
+        <div class="slide">
+            <img src="assets/img/slider-1.png">
+            <div class="redborder">
+                A president of the last country, which still resisting the onslaught of Dammat, appeals to Sparta, an elite mercenary unit which has proven itself to deal with local conflicts in the past. Spartans will help the local resistance stop the chaos in which East Africa is descending into and prevent Daamat from becoming the World's No. 1 terrorist.
+
+            </div>
+        </div>
+        <div class="slide">
+            <img src="assets/img/slider-1.png">
+            <div class="redborder">
+                A president of the last country, which still resisting the onslaught of Dammat, appeals to Sparta, an elite mercenary unit which has proven itself to deal with local conflicts in the past. Spartans will help the local resistance stop the chaos in which East Africa is descending into and prevent Daamat from becoming the World's No. 1 terrorist.
+
+            </div>
+        </div>
+    </div>
     <section class="main  mb-6">
         <div class="header-section">
             <div class="h-section  d-desktop">FEATURES</div>
@@ -132,61 +160,11 @@
             </div>
 
         </div>
-        <div class="roundtex running-text-container">
+        <div class="roundtex running-text-container" style="transform: rotate(180deg);">
             <div class="running-text">COMING SOON // TURN-BASED TACTICS // COMING SOON // TURN-BASED TACTICS // COMING SOON // TURN-BASED TACTICS // COMING SOON // TURN-BASED TACTICS // COMING SOON // TURN-BASED TACTICS // COMING SOON // TURN-BASED TACTICS</div>
         </div>
     </section>
-    <section class="main  mb-6">
-        <div class="header-section">
-            <div class="h-section  d-desktop">NEWS</div>
-            <h2>DISCOVER MORE</h2>
-        </div>
-        <div class="body-section3">
-            <div class="owl-carousel owl-theme" id="sliderOwn">
-                <!--Слайд 1-->
-                <div class="slide col-4" >
-                    <div class="image"><img src="assets/img/image41.png"></div>
-                    <div class="text">
-                        <h3>reveal stream</h3>
-                        <div class="date">06/24/2025</div>
-                        The president of the last country still holding out under Daamat's onslaught turns to Sparta, an elite mercenary unit that has proven itself in local conflicts of the past. Sparta, an elite mercenary unit that has proven itself in local conflicts of th...
-                        <div class="link">Read more</div>
-                    </div>
-                </div>
-                <!--Слайд 2-->
-                <div class="slide col-4" >
-                    <div class="image"><img src="assets/img/image41.png"></div>
-                    <div class="text">
-                        <h3>reveal stream</h3>
-                        <div class="date">06/24/2025</div>
-                        The president of the last country still holding out under Daamat's onslaught turns to Sparta, an elite mercenary unit that has proven itself in local conflicts of the past. Sparta, an elite mercenary unit that has proven itself in local conflicts of th...
-                        <div class="link">Read more</div>
-                    </div>
-                </div>
-                <!--Слайд 3-->
-                <div class="slide col-4" >
-                    <div class="image"><img src="assets/img/image41.png"></div>
-                    <div class="text">
-                        <h3>reveal stream</h3>
-                        <div class="date">06/24/2025</div>
-                        The president of the last country still holding out under Daamat's onslaught turns to Sparta, an elite mercenary unit that has proven itself in local conflicts of the past. Sparta, an elite mercenary unit that has proven itself in local conflicts of th...
-                        <div class="link">Read more</div>
-                    </div>
-                </div>
-                <!--Слайд 4-->
-                <div class="slide col-4" >
-                    <div class="image"><img src="assets/img/image41.png"></div>
-                    <div class="text">
-                        <h3>reveal stream</h3>
-                        <div class="date">06/24/2025</div>
-                        The president of the last country still holding out under Daamat's onslaught turns to Sparta, an elite mercenary unit that has proven itself in local conflicts of the past. Sparta, an elite mercenary unit that has proven itself in local conflicts of th...
-                        <div class="link">Read more</div>
-                    </div>
-                </div>
 
-            </div>
-        </div>
-    </section>
 
     <section class="bottom">
         <div class="top-text d-tablet">JOIN THE BATTLE</div>

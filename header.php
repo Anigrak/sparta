@@ -30,11 +30,10 @@
         <a href="/"></a>
     </div>
     <div class="menu-all">
-    <div class="menu d-desktop mr-1">
+    <div class="menu d-desktop mr-a">
         <ul class="navigation-text">
             <li><a href="" target="_blank">ABOUT</a></li>
             <li><a href="" target="_blank">FEATURES</a></li>
-            <li><a href="" target="_blank">NEWS</a></li>
             <li><a href="" target="_blank" class="btn btn-text2 redbtn">BUY NOW</a></li>
         </ul>
     </div>
