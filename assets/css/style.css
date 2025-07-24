@@ -157,9 +157,14 @@ header .logo a {display: flex;height: 34px;}
 header .menu-all {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  width: 100%;
+  /* min-width: 1240px; */
+  justify-content: space-between;
 }
 .mr-a {}
+header .menu  {display: flex;}
 header .menu ul {gap: 16px;}
 header .right {display: flex; align-items: center;}
 header .right .personal ul {gap: 15px; padding-right: 15px;}
@@ -790,7 +795,7 @@ footer .f-bottom{
 
 .video {
   max-width: 1600px;
-  margin: 0 auto 20px;
+  margin:auto ;
 }
 .video-wrp {
   position: relative;
@@ -1147,6 +1152,9 @@ opacity: 0.5;
   .bottom .solders {
     background-size: contain;
   }
+  .bottom  {
+    height: 704px;
+  }
   .main-banner {
     background-size: cover;
   }
@@ -1180,6 +1188,10 @@ opacity: 0.5;
 @media screen and (max-width: 980px) {
   section{margin-bottom:60px;}
   main {margin: 0px; padding-top: 15px; }
+  header .menu-all {
+
+    justify-content: space-between;
+  }
   section.main {
     margin: unset;
   width:100%

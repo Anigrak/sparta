@@ -26,11 +26,12 @@
 <body>
 <main>
 <header>
+    <div class="menu-all">
     <div class="logo">
         <a href="/"></a>
     </div>
-    <div class="menu-all">
-    <div class="menu d-desktop mr-a">
+
+    <div class="menu d-desktop">
         <ul class="navigation-text">
             <li><a href="" target="_blank">ABOUT</a></li>
             <li><a href="" target="_blank">FEATURES</a></li>
@@ -80,5 +81,6 @@
             <img src="assets/img/burger_icon.png" class="js-burger">
         </div>
     </div>
+
     </div>
 </header>
