@@ -32,6 +32,9 @@ let hash=window.location.hash;
         $('.content.in').hide();
         $('.content.up').show();
     });
+    $('.forgot').on('click', function(){
+
+    });
 
     $('.js-auth').on('click', function(){
         if(inProgress) return;

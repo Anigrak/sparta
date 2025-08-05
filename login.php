@@ -54,6 +54,9 @@
                     </label>
                     <div class="info-text2 mt-1 error-detail js-error"></div>
                 </div>
+                <div class="mb-3 form-row forgot">
+                    <div class="info-text2 mt-1">Forgot password</div>
+                </div>
                 <button type="button" class="mb-3 btn btn-text1 js-auth">SIGN IN</button>
                 <input type="hidden" id="login_form__token" name="login_form[_token]" value="">
             </form>

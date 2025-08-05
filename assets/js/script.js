@@ -8,8 +8,11 @@ $(document).ready(function() {
     });
 
     let profileBtn = $('.js-profile');
-    profileBtn.on('click',function(){
-        $('.js-profile-dropdown').toggleClass('hidden');
+    profileBtn.on('mouseenter',function(){
+        $('.js-profile-dropdown').removeClass('hidden');
+    });
+    $('.js-profile-dropdown').on('mouseleave',function(){
+        $('.js-profile-dropdown').addClass('hidden');
     });
 
     let hassh=window.location.hash;
@@ -48,6 +51,8 @@ $(document).ready(function() {
             }
         });
     });
+
+
     $("#full_download_button").on("click", function () {
         $.ajax({
             type: "GET",

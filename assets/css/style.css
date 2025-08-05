@@ -174,13 +174,16 @@ header .right .lang ul, .main-menu .lang ul {gap: 15px; padding-left: 15px; bord
 header .right .lang ul a, .main-menu .lang ul a {display: flex; color:var(--gray-2)}
 header .right .lang ul a.check, .main-menu .lang ul a.check {color:var(--white)}
 header .right .burger img {cursor: pointer;}
-header .right .personal {position:relative}
-header .right .personal .prof-header {padding-right: 15px;}
+header .right .personal {position:relative;  min-width: 100px;}
+header .right .personal .prof-header {
+  padding-right: 15px;
+  text-align: center;
+}
 header .right .personal .prof-header-dropdown .prof-header-dropdown-inner {
   position: absolute;
-  top: 34px;
+  top: 17px;
   left: -75px;
-  background: var(--gray-1) url("../img/corner-prof.svg") top right no-repeat;
+  background: var(--gray-1) url(../img/corner-prof.svg) top right no-repeat;
   height: 225px;
   display: flex;
   flex-direction: column;
@@ -190,7 +193,7 @@ header .right .personal .prof-header-dropdown .prof-header-dropdown-inner {
   align-items: stretch;
   padding: 20px;
   text-align: center;
-  z-index:100;
+  z-index: 100;
   clip-path: polygon(0% 0%, calc(100% - 9px) 0%, 100% calc(0% + 9px), 100% 100%, 0% 100%);
 }
 header .right .personal .prof-header-dropdown .prof-header-dropdown-inner ul{flex-direction: column; gap:5px;}
@@ -213,11 +216,16 @@ header .right .personal .prof-header-dropdown .t-5 {
   height: 18px;
   width: 20px;
   position: absolute;
-  left: 55px;
+  left: 30%;
   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 }
 
+header .right .personal .prof-header-dropdown {
+  position: relative;
+}
 
+.content.in .checkbox{width: 50%; float:left}
+.content.in .forgot{text-align: right;cursor:pointer}
 header .right .personal .user_dropdown {display:none; position: fixed; padding-top: 32px; background: center 20px no-repeat; max-width: 250px; overflow: hidden; transform: translateX(-40%);}
 header .right .personal:hover .user_dropdown {display: block;}
 header .right .user_dropdown .user_menu {padding: 20px; background-color: var(--black); border: 1px solid var(--gray-1);}

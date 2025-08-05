@@ -45,7 +45,7 @@
                 <li><a href="login.php#register" class="btn">SIGN UP</a></li>
             </ul>
 
-            <div class="prof-header js-profile" style="display: none">IVAN_TECHNO2001</div>
+            <div class="prof-header js-profile" style="display: none">KORBEZ</div>
 
             <div class="prof-header-dropdown hidden js-profile-dropdown">
                 <div class="t-5 gray2"></div>

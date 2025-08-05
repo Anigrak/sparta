@@ -42,6 +42,23 @@
             <input type="hidden" id="change_form__token" name="change_form[_token]" value="">
         </form>
     </div>
+    <div class="page_window success-block passwordnew-div js-hide" style="display: none">
+        <h3>New password</h3>
+        <form class="content in">
+            <div class="mb-2 form-row">
+                <input type="password" id="new_form_password_first" name="new_form[password][first]" required="required" placeholder="New password" class="field-text" autocomplete="off">
+                <span class="password-toggle js-password-toggle"></span>
+                <div class="info-text2 mt-1 error-detail js-error"></div>
+            </div>
+            <div class="mb-3 form-row">
+                <input type="password" id="new_form_password_second" name="new_form[password][second]" required="required" placeholder="Repeat password" class="field-text" autocomplete="off">
+                <span class="password-toggle js-password-toggle"></span>
+                <div class="info-text2 mt-1 error-detail js-error"></div>
+            </div>
+            <button type="button" class="mb-2 btn redbtn btn-text1 js-new-password">CHANGE</button>
+            <input type="hidden" id="new_form__token" name="new_form[_token]" value="">
+        </form>
+    </div>
     <div class="page_window success-block email-div js-hide" style="display: none">
         <h3>Change email</h3>
         <form class="content in">
